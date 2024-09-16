@@ -1,4 +1,4 @@
-# You Can CLI To deal with git/github:
+# You Can Use CLI To deal with git/github:
 - ## To create new branch
         git chechout -b <name-branch>
 - ## To push ur changes in ur branch
@@ -11,4 +11,4 @@
         git merge <name-branch>
         git push -u origin main
 
-# Or You Can VSCode Interface 
+# Or You Can Use VSCode Interface 

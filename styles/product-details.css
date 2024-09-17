@@ -1,0 +1,213 @@
+:root {
+    --integral-CF: "integral-CF";
+    --Satoshi-Bold: "Satoshi-Bold";
+    --Satoshi-Medium: "Satoshi-Medium";
+    --Satoshi-Regular: "Satoshi-Regular";
+    --box-color: #F0F0F0;
+}
+
+/* start global rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+body {}
+
+.container {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* end global rules */
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/*start header*/
+header {
+    position: absolute;
+    width: 100%;
+
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-bottom: 1.5px solid;
+    border-color: rgb(0 0 0 / 10%);
+    ;
+
+}
+
+header .container .burger-icon {
+    padding: 20px;
+    font-size: 31px;
+}
+
+
+
+
+@media (min-width: 1200px) {
+    header .container .burger-icon {
+        display: none;
+    }
+
+}
+
+header nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header .container h1 {
+    font-family: var(--integral-CF);
+}
+
+header .container ul {
+    display: flex;
+    position: relative;
+}
+
+
+@media (max-width: 1199px) {
+    header .container ul {
+        display: none;
+
+    }
+
+    header .burger-icon:hover~ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--box-color);
+    }
+
+    header .burger-icon:hover~ul a {
+        padding: 12px;
+    }
+}
+
+
+header .container ul svg {
+    position: absolute;
+    right: 79%;
+    top: 30px;
+
+}
+
+header .container ul li .shop {
+    padding-right: 27px;
+}
+
+
+header .container ul li a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    font-family: var(--Satoshi-Regular);
+    font-size: 14px;
+    transition: 0.3s;
+    padding: 30px 15px;
+    padding-left: 25px;
+
+}
+
+
+
+header .container .search {
+    position: relative;
+    padding: 0px 12px;
+}
+
+
+
+header .container .search i {
+    color: rgb(0 0 0 / 40%);
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    left: 26px;
+    font-size: 20px;
+}
+
+@media(max-width:950px) {
+    header .container .search i {
+
+        transform: translateX(-65%);
+        color: black;
+        position: relative;
+        right: 65%;
+
+    }
+}
+
+
+header .container .search input[type="search"] {
+    font-size: 30px;
+    background-color: var(--box-color);
+    border-radius: 14px;
+    border: none;
+    padding: 0 45px;
+}
+
+@media(max-width:950px) {
+    header .container .search input {
+        display: none;
+
+    }
+}
+
+
+header .search input::placeholder {
+    position: absolute;
+    font-family: var(--Satoshi-Regular);
+    color: rgb(0 0 0 / 40%);
+    font-size: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+
+header .container .cart {
+    color: black;
+    padding: 20px;
+}

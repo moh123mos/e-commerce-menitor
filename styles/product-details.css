@@ -99,6 +99,10 @@ header .container h1 {
 
 }
 
+input#menu-id {
+    display: none;
+}
+
 header .container ul {
     display: flex;
     position: relative;
@@ -111,21 +115,29 @@ header .container ul {
 
     }
 
-    header .burger-icon:hover~ul {
+    #menu-id:checked~ul {
         z-index: 2;
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 75%;
+        top: 100%;
         left: 0;
         width: 100%;
         background-color: var(--box-color);
 
+        a {
+            padding: 18px;
+            background-color: transparent;
+            border-bottom: 2px solid rgb(0 0 0 / 7%);
+            font-size: 18px;
+        }
+
+        .svg {
+            display: none;
+        }
     }
 
-    header .burger-icon:hover~ul a {
-        padding: 12px;
-    }
+
 }
 
 
@@ -170,12 +182,12 @@ header .container .search {
 
 
 header .container .search svg {
-    color: rgb(0 0 0 / 40%);
     top: 50%;
     position: absolute;
     transform: translateY(-50%);
     left: 26px;
     font-size: 20px;
+    opacity: .4;
 }
 
 @media(max-width:950px) {
@@ -184,11 +196,8 @@ header .container .search svg {
         transform: translateX(-65%);
         position: relative;
         right: 65%;
+        opacity: 1;
 
-    }
-
-    #search-icon {
-        fill: black;
     }
 }
 
@@ -746,4 +755,123 @@ header .container .profile {
 
 
     }
+}
+
+.review-section .container .head {}
+
+.review-section .container .head ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+    border-color: rgb(0 0 0 / 10%);
+}
+
+.review-section .container .head ul li {
+    font-family: var(--Satoshi-Regular);
+    color: rgb(0 0 0 / 60%);
+}
+
+.review-section .container .head ul .select {
+    font-family: var(--Satoshi-Medium);
+    color: black;
+    display: inline-block;
+    padding: 0 95px;
+    height: 39px;
+    border-bottom: 1px solid;
+    position: relative;
+    top: 10px;
+}
+
+.review-section .container .head ul li a {}
+
+.review-section .container .review-container {
+    gap: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 30px 0;
+}
+
+.review-section .container .review-container .box {
+    border-radius: 20px;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 16px 26px;
+}
+
+.review-section .container .review-container .box .head {
+    position: relative;
+}
+
+.review-section .container .review-container .box .head h3 {
+    padding: 5px 0;
+    font-family: var(--Satoshi-Bold)
+}
+
+.review-section .container .review-container .box .sign {
+    position: absolute;
+    bottom: 3px;
+    left: 117px;
+}
+
+.review-section .container .review-container .box .sign-2 {
+    position: absolute;
+    bottom: 3px;
+    left: 72px;
+}
+
+.review-section .container .review-container .box .sign-3 {
+    position: absolute;
+    bottom: 3px;
+    left: 79px;
+}
+
+.review-section .container .review-container .box .sign-4 {
+    position: absolute;
+    bottom: 1px;
+    left: 76px;
+}
+
+.review-section .container .review-container .box .sign-5 {
+    position: absolute;
+    bottom: 3px;
+    left: 71px;
+}
+
+.review-section .container .review-container .box .sign-6 {
+    position: absolute;
+    bottom: 3px;
+    left: 63px;
+}
+
+.review-section .container .review-container .box .head .icon {
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.review-section .container .review-container .box p {
+    padding: 8px 0;
+    color: rgb(0 0 0 / 60%);
+    font-family: var(--Satoshi-Regular);
+}
+
+.review-section .container .review-container .box .footer {
+    padding-top: 18px;
+    color: rgb(0 0 0 / 60%);
+    font-family: var(--Satoshi-Medium);
+}
+
+.review-section .container .load {
+    left: 40%;
+    position: relative;
+    border-radius: 21px;
+    padding: 17px 43px;
+    font-size: 18px;
+    background-color: white;
+    border-color: rgb(0 0 0 / 10%);
+    font-family: var(--Satoshi-Medium);
 }

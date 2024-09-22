@@ -23,7 +23,7 @@ ul {
     list-style: none;
 }
 
-body {}
+
 
 .container {
     padding-left: 15px;
@@ -318,7 +318,7 @@ header .container .profile {
 
 }
 
-.T-shirt .produt-images .small {}
+
 
 @media(max-width:769px) {
 
@@ -496,9 +496,6 @@ header .container .profile {
     }
 }
 
-@media(min-width:360px) {
-    .T-shirt .produt-images .main img {}
-}
 
 .T-shirt .product-details {
 
@@ -757,7 +754,7 @@ header .container .profile {
     }
 }
 
-.review-section .container .head {}
+
 
 .review-section .container .head ul {
     align-items: center;
@@ -1068,7 +1065,7 @@ header .container .profile {
     }
 }
 
-.option .box {}
+
 
 @media(max-width:991px) {
     .option .box {

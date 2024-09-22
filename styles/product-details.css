@@ -23,7 +23,7 @@ ul {
     list-style: none;
 }
 
-body {}
+
 
 .container {
     padding-left: 15px;
@@ -318,7 +318,7 @@ header .container .profile {
 
 }
 
-.T-shirt .produt-images .small {}
+
 
 @media(max-width:769px) {
 
@@ -496,9 +496,6 @@ header .container .profile {
     }
 }
 
-@media(min-width:360px) {
-    .T-shirt .produt-images .main img {}
-}
 
 .T-shirt .product-details {
 
@@ -757,7 +754,7 @@ header .container .profile {
     }
 }
 
-.review-section .container .head {}
+
 
 .review-section .container .head ul {
     align-items: center;
@@ -779,10 +776,17 @@ header .container .profile {
     color: black;
     display: inline-block;
     padding: 0 95px;
-    height: 39px;
+    height: 44px;
     border-bottom: 1px solid;
     position: relative;
     top: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .review-section .container .head ul .select {
+        padding: 0 75px;
+    }
 }
 
 @media (max-width: 649px) {
@@ -807,7 +811,7 @@ header .container .profile {
 
     .review-section .container .head ul .select {
 
-        padding: 0px 3px;
+        padding: 0px 15px;
 
     }
 }
@@ -1055,20 +1059,42 @@ header .container .profile {
     gap: 1.6%;
 }
 
-@media(max-width:770px) {
+@media(max-width:991px) {
     .option .images-container {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-.option .box {
-    height: fit-content;
+
+
+@media(max-width:991px) {
+    .option .box {
+        height: fit-content;
+    }
 }
 
 .option .images-container .img {
     height: 55%;
     overflow: hidden;
     border-radius: 20px;
+}
+
+@media(max-width:991px) {
+    .option .images-container .img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .option .images-container .img {
+        height: 276px;
+    }
+}
+
+@media (max-width: 444px) {
+    .option .images-container .img {
+        height: 240px;
+    }
 }
 
 .option .images-container img {
@@ -1078,6 +1104,12 @@ header .container .profile {
     transition: .3s;
     cursor: pointer;
 
+}
+
+@media (max-width: 444px) {
+    .option .images-container img {
+        bottom: 15%;
+    }
 }
 
 .option .images-container img:hover {
@@ -1163,10 +1195,160 @@ header .container .profile {
     }
 }
 
+
+
+.subscribe {
+    position: relative;
+    bottom: 62px;
+}
+
+@media(max-width:1200px) {
+    .subscribe {
+        bottom: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .subscribe {
+        bottom: -40px;
+        padding: 0 15px;
+    }
+}
+
+.subscribe .container {
+    background-color: black;
+    padding: 36px 60px;
+    border-radius: 30px;
+}
+
+@media(max-width:576px) {
+    .subscribe .container {
+        padding: 36px 20px;
+    }
+}
+
+.subscribe .container .box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10%;
+}
+
+@media(max-width:576px) {
+
+    .subscribe .container .box {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 444px) {
+    .subscribe .container .box {
+        gap: 25px;
+    }
+}
+
+.subscribe .container .left {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.subscribe .container .left h1 {
+    font-family: var(--integral-CF);
+    color: #F0F0F0;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+@media(max-width:1200px) {
+    .subscribe .container .left h1 {
+        font-size: 34px;
+    }
+}
+
+.subscribe .container .right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+@media(max-width:768px) {
+    .subscribe .container .right {
+        justify-content: center;
+    }
+}
+
+.subscribe .container .right svg {
+    left: 7%;
+    position: absolute;
+    top: 12%;
+}
+
+.subscribe .container .right input {
+    padding-left: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 89px;
+    display: inline-block;
+    border-radius: 25px;
+    border: none;
+}
+
+@media(max-width:576px) {
+    .subscribe .container .right input {
+        padding-left: 60px;
+    }
+}
+
+.subscribe .container .right input::placeholder {
+    font-family: var(--Satoshi-Regular);
+    color: rgb(0 0 0 / 40%);
+}
+
+.subscribe .container .right button {
+    font-family: var(--Satoshi-Medium);
+    display: inline-block;
+    padding: 8px 70px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: .3s;
+    border: none;
+}
+
+.subscribe .container .right button:hover {
+    background-color: rgb(153 153 153);
+    color: #F0F0F0;
+
+}
+
+
 .footer-section {
     background-color: #F0F0F0;
-    margin-top: 10%;
-    padding-top: 8%;
+    margin-top: -10%;
+    padding-top: 9%;
+}
+
+@media(max-width: 768px) {
+    .footer-section {
+        margin-top: -12%;
+        padding-top: 18%;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-section {
+        margin-top: -14%;
+        padding-top: 23%;
+    }
+}
+
+@media (max-width: 444px) {
+    .footer-section {
+        margin-top: -25%;
+        padding-top: 40%;
+    }
 }
 
 .footer-section .page-details {
@@ -1205,8 +1387,10 @@ header .container .profile {
 }
 
 .footer-section .boxes .main-box .social {
+    display: flex;
     position: relative;
     top: 8%;
+    gap: 10px;
 }
 
 .footer-section .boxes .main-box .social svg {
